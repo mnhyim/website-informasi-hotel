@@ -40,7 +40,8 @@
 
 </div>
 
-<div class="bg-white w-9/12 p-6 mt-13 mb-4 mx-auto rounded-sm shadow-md grid sm:grid-cols-3 sm:grid-rows-2 grid-cols-1 gap-6">
+{{-- Hotel list --}}
+<div class="bg-white w-9/12 p-4 mt-13 mb-4 mx-auto rounded-sm shadow-md grid sm:grid-cols-3 sm:grid-rows-2 grid-cols-1 gap-6">
     @foreach ($hotels as $hotel)
     <a class="block h-96 bg-white p-4 shadow-md rounded-sm transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer" href="{{ route('home.show', $hotel->id) }}">
         <img src="{{ $hotel->images }}" alt="{{ $hotel->name }}" class="h-1/2 w-full">
@@ -55,6 +56,22 @@
     <div class="col-span-3 mt-auto">
         {!! $hotels->links() !!}
     </div>
+</div>
+
+{{-- ANNOUNCEMENT --}}
+<div class="bg-white w-9/12 p-4 h-96 my-4 mx-auto rounded-sm shadow-md overflow-y-scroll">
+    <h1 class="text-2xl font-bold text-cool-gray-900 mb-4">Announcement</h1>
+    <hr class="mb-4">
+    @foreach ($announcement as $an)
+    <div class="mb-4 flex border border-cool-gray-100 p-4 shadow-md transition duration-300 ease-in-out transform hover:-translate-y-0.5 cursor-pointer">
+        <img src="{{ $an->hotel->images }}" alt="{{ $an->hotel->name }}" class="h-16 w-16 rounded-full">
+        <div class="flex flex-col ml-3">
+            <h1 class="text-xl font-bold mb-2">{{ $an->hotel->name }}</h1>
+            <p>{{ $an->messages }}</p>
+        </div>
+    </div>
+    @endforeach
+    {!! $announcement ?? ''->links() !!}
 </div>
 
 {{-- BOTTOM --}}

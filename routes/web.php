@@ -20,5 +20,7 @@ Route::get('/', function () {
 
 Route::resource('home', \App\Http\Controllers\HomeController::class);
 Route::resource('dashboard', \App\Http\Controllers\DashboardController::class);
+Route::resource('announce', \App\Http\Controllers\AnnouncementController::class);
+Route::resource('comment', \App\Http\Controllers\CommentController::class);
 
 Route::get('search','App\Http\Controllers\HomeController@search');
