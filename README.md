@@ -2,7 +2,7 @@
 Website informasi hotel sederhana dengan menggunakan Laravel 8 dan TailwindCSS sebagai tugas besar mata kuliah Pengembangan Aplikasi Berbasis Web.
 
 ### Anggota
-1. Andika Akbar Aditya - 11181003
+1. Andika Akbar Aditya - 11181008
 2. Fahmi Mahmuji Cholis - 11181026
 3. Muhamad Nur Hasyim - 11181050
 
