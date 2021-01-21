@@ -3,7 +3,7 @@ Website informasi hotel sederhana dengan menggunakan Laravel 8 dan TailwindCSS s
 
 ### Anggota
 1. Andika Akbar Aditya - 11181003
-2. Fahmi Mahmuji Cholis - 11181016
+2. Fahmi Mahmuji Cholis - 11181026
 3. Muhamad Nur Hasyim - 11181050
 
 ### Usage
